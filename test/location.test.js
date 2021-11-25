@@ -1,17 +1,17 @@
 const request = require("supertest")
 const expect = require("chai").expect;
-const { GerarToken, report } = require('../../support/helper.js');
-const { post_location } = require('../../support/routes/location/routeLocation');
-const bodyLocationSucess = require('../../fixtures/Location/bodyLocation.json')
-const bodyWithoutLocation = require('../../fixtures/Location/bodyWithoutLocation.json')
-const bodyLocationCityError = require('../../fixtures/Location/bodyLocationCityError.json')
-const bodyLocationStateError = require('../../fixtures/Location/bodyLocationStateError.json')
-const bodyLocationVehicleError = require('../../fixtures/Location/bodyLocationVehicleError.json')
-const bodyLocationEventError = require('../../fixtures/Location/bodyLocationEventError.json')
-const bodyLocationWithoutBody = require('../../fixtures/Location/bodyLocationWithoutBody.json')
-const bodyLocationFreightError = require('../../fixtures/Location/bodyLocationFreightError.json')
-const bodyLocationVehicleLicence = require('../../fixtures/Location/bodyLocationVehicleLicenceError.json')
-const bodyLocationPhoneError = require('../../fixtures/Location/bodyLocationPhoneError.json')
+const { GerarToken, report } = require('../support/helper.js');
+const { post_location } = require('../support/routes/location/routeLocation');
+const bodyLocationSucess = require('../fixtures/Location/bodyLocation.json')
+const bodyWithoutLocation = require('../fixtures/Location/bodyWithoutLocation.json')
+const bodyLocationCityError = require('../fixtures/Location/bodyLocationCityError.json')
+const bodyLocationStateError = require('../fixtures/Location/bodyLocationStateError.json')
+const bodyLocationVehicleError = require('../fixtures/Location/bodyLocationVehicleError.json')
+const bodyLocationEventError = require('../fixtures/Location/bodyLocationEventError.json')
+const bodyLocationWithoutBody = require('../fixtures/Location/bodyLocationWithoutBody.json')
+const bodyLocationFreightError = require('../fixtures/Location/bodyLocationFreightError.json')
+const bodyLocationVehicleLicence = require('../fixtures/Location/bodyLocationVehicleLicenceError.json')
+const bodyLocationPhoneError = require('../fixtures/Location/bodyLocationPhoneError.json')
 
 describe("Gladys - Location", function () {
 

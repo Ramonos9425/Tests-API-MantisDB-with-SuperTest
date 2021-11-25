@@ -1,7 +1,7 @@
 const request = require("supertest")
 const expect = require("chai").expect;
-const { GerarToken, report } = require('../../support/helper.js');
-const { post_location } = require('../../support/routes/location/routeLocation');
+const { GerarToken, report } = require('../support/helper.js');
+const { get_cities_nearby } = require('../support/routes/cities/routeCitiesNearby');
 
 describe("Gladys - Location", function () {
 
@@ -14,7 +14,7 @@ describe("Gladys - Location", function () {
 
     });
 
-    it("Get - Gladys - Sucess", async function () {
+    it("Get - Gladys - Cities Nearby - Sucess", async function () {
 
         const response = await get_cities_nearby(this, token)
 
