@@ -1,0 +1,13 @@
+{
+    "event": "checkin",
+    "vehicle_id": 321643,
+    "selected_location": {
+        "city": "Sao dos Lagos",
+        "state": "PR"
+    },
+    "current_geolocation": {
+        "latitude": 123.42382123288,
+        "longitude": -122.0829001231266
+    },
+    "location_enabled": true
+}

@@ -1,0 +1,18 @@
+image: 'node'
+
+stages:
+ - test
+
+before_script:
+  - npm i
+
+test:
+  timeout: 1 hours
+  allow_failure: true
+  stage: test
+  script:
+    - npm run test-html
+  artifacts:
+    expire_in: 15 day
+    paths:
+      - $CI_PROJECT_DIR/mochawesome-report
