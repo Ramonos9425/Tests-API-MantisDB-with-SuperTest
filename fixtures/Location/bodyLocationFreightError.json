@@ -1,0 +1,16 @@
+{
+    "event": "checkin",
+    "vehicle_id": 543569,
+    "vehicle_licence": "PLA-5555",
+    "freight_id": "1123",
+    "phone" : null,
+    "selected_location": {
+        "city": "Belo Horizonte",
+        "state": 1
+    },
+    "current_geolocation": {
+        "latitude": 123.42382123281,
+        "longitude": -122.0829001222336
+    },
+    "location_enabled": true
+}
