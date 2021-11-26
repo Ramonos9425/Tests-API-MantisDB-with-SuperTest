@@ -1,6 +1,9 @@
 {
     "event": "checkin",
     "vehicle_id": 543569,
+    "vehicle_licence": "PLA-5555",
+    "freight_id": null,
+    "phone" : null,
     "selected_location": {
         "city": "Belo Horizonte",
         "state": 1

@@ -1,6 +1,9 @@
 {
     "event": "checkin",
     "vehicle_id": 321643,
+    "vehicle_licence": "PLA-5555",
+    "freight_id": null,
+    "phone" : null,
     "selected_location": {
         "city": "Sao dos Lagos",
         "state": "PR"

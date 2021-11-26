@@ -32,10 +32,13 @@ describe("Gladys - Location", function () {
         expect(response.body).to.not.be.null
         expect(response.body.event).to.equal('checkin')
         expect(response.body.vehicle_id).to.equal(321643)
+        expect(response.body.vehicle_licence).to.equal('PLA-5555')
+        expect(response.body.freight_id).to.equal(null)
+        expect(response.body.phone).to.equal(null)
         expect(response.body.selected_location.city).to.equal('Sao dos Lagos')
         expect(response.body.selected_location.state).to.equal('PR')
-        expect(response.body.current_location.latitude).to.equal(123.42382123288)
-        expect(response.body.current_location.longitude).to.equal(-122.0829001231266)
+        expect(response.body.current_geolocation.latitude).to.equal(123.42382123288)
+        expect(response.body.current_geolocation.longitude).to.equal(-122.0829001231266)
         expect(response.body.location_enabled).to.equal(true)
 
     });
@@ -48,6 +51,9 @@ describe("Gladys - Location", function () {
         expect(response.body).to.not.be.null
         expect(response.body.event).to.equal('checkin')
         expect(response.body.vehicle_id).to.equal(321643)
+        expect(response.body.vehicle_licence).to.equal('PLA-5555')
+        expect(response.body.freight_id).to.equal(null)
+        expect(response.body.phone).to.equal(null)
         expect(response.body.selected_location.city).to.equal('Sao dos Lagos')
         expect(response.body.selected_location.state).to.equal('PR')
         expect(response.body.location_enabled).to.equal(true)
