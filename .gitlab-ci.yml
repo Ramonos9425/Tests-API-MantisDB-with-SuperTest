@@ -8,10 +8,12 @@ before_script:
 
 test:
   timeout: 1 hours
+  allow_failure: false
   stage: test
   script:
     - npm run test-html
   artifacts:
     expire_in: 15 day
+    when: always
     paths:
       - $CI_PROJECT_DIR/mochawesome-report
