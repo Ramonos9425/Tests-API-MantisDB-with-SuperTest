@@ -28,12 +28,12 @@ describe("Gladys - Location", function () {
     it("Post - Gladys - Sucess Location", async function () {
 
         const response = await post_location(this, token, bodyLocationSucess)
-        //console.log(response.body)
+
         expect(response.status, "Status").to.equal(201)
         expect(response.body).to.not.be.null
         expect(response.body.event).to.equal('checkin')
         expect(response.body.vehicle_id).to.equal(321643)
-        expect(response.body.licence_plate).to.equal('PLA-5555')
+        expect(response.body.license_plate).to.equal('PLA-5555')
         expect(response.body.freight).to.equal("eb58e3e72765cffa4ea2983fb1417960-cd7696d5c91607c76012bb32b71c0fbc")
         expect(response.body.phone).to.equal('11 987654321')
         expect(response.body.city.name).to.equal('Sao dos Lagos')
@@ -54,12 +54,12 @@ describe("Gladys - Location", function () {
         expect(response.body).to.not.be.null
         expect(response.body.event).to.equal('checkin')
         expect(response.body.vehicle_id).to.equal(321643)
-        expect(response.body.licence_plate).to.equal('PLA-5555')
+        expect(response.body.license_plate).to.equal('PLA-5555')
         expect(response.body.freight).to.equal("eb58e3e72765cffa4ea2983fb1417960-cd7696d5c91607c76012bb32b71c0fbc")
         expect(response.body.phone).to.equal('11 987654321')
         expect(response.body.city.name).to.equal('Sao dos Lagos')
         expect(response.body.city.state).to.equal('PR')
-        expect(response.body.geolocation_enabled).to.equal(true)
+        expect(response.body.geolocation_enabled).to.equal(false)
         expect(response.body.timestamp).to.contain("-03:00")
     });
 
@@ -151,6 +151,6 @@ describe("Gladys - Location", function () {
         expect(response.body).contains({
             message: 'Invalid authentication credentials'
         })
-    });
+    }); 
 });
 
