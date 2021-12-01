@@ -7,7 +7,7 @@ const CoordinateLatError = require('../fixtures/Cities/coordinateLatError.json')
 const CoordinateLngError = require('../fixtures/Cities/coordinateLngError.json')
 const TokenError = require('../fixtures/tokenError.json')
 
-describe("Gladys - Location", function () {
+describe("Gladys - Cities Nearby", function () {
 
     var token
     before(async () => {
