@@ -8,7 +8,6 @@ before_script:
 
 test:
   timeout: 1 hours
-  allow_failure: false
   stage: test
   script:
     - npm run test-html
