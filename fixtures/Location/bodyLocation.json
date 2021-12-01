@@ -1,16 +1,16 @@
 {
     "event": "checkin",
     "vehicle_id": 321643,
-    "vehicle_licence": "PLA-5555",
-    "freight_id": null,
-    "phone" : null,
-    "selected_location": {
-        "city": "Sao dos Lagos",
+    "licence_plate": "PLA-5555",
+    "freight": "eb58e3e72765cffa4ea2983fb1417960-cd7696d5c91607c76012bb32b71c0fbc",
+    "phone" : "11 987654321",
+    "city": {
+        "name": "Sao dos Lagos",
         "state": "PR"
     },
-    "current_geolocation": {
+    "coordinate": {
         "latitude": 123.42382123288,
         "longitude": -122.0829001231266
     },
-    "location_enabled": true
+    "geolocation_enabled": true
 }

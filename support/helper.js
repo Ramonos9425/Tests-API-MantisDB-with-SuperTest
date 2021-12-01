@@ -7,10 +7,9 @@ exports.GerarToken = async () => {
   .set('Content-Type', 'application/json')
   .send('{"user_id": 24}')
   .expect(200)
-  console.log('Token gerado')    
-  console.log(response.body.access_token)                     
-  return 'Bearer ' + response.body.access_token;
-
+ // console.log('Token gerado')    
+ // console.log(response.body.access_token)                     
+  return 'Basic Z2xhZHlzOm5nTUYlMV4qODBVZG9KdmI'
 };
 
 //Sempre passar this (contexto) e o response
