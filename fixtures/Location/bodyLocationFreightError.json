@@ -1,7 +1,7 @@
 {
     "event": "checkin",
     "vehicle_id": 543569,
-    "licence_plate": "PLA-5555",
+    "license_plate": "PLA-5555",
     "freight": 112,
     "phone" : null,
     "city": {
