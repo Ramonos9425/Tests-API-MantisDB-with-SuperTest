@@ -7,9 +7,9 @@ exports.GerarToken = async () => {
   .set('Content-Type', 'application/json')
   .send('{"user_id": 24}')
   .expect(200)
- // console.log('Token gerado')    
- // console.log(response.body.access_token)                     
-  return 'Basic Z2xhZHlzOm5nTUYlMV4qODBVZG9KdmI'
+  console.log('Token gerado')    
+  console.log(response.body.access_token)                     
+  return 'Bearer ' + response.body.access_token;
 };
 
 //Sempre passar this (contexto) e o response
@@ -31,3 +31,25 @@ exports.ValidarAutenticacao = async (route) => {
   
   }
   
+exports.GerarDataAtual= async () => {
+
+  var data = new Date()
+  var dia = String(data.getDate()).padStart(2,'0')
+  var mes = String(data.getMonth()+1).padStart(2,'0')
+  var ano = data.getFullYear()
+  var dataAtual = ano+'-'+mes+'-'+dia
+
+  return dataAtual
+};
+
+exports.GerarHoraAtual= async () => {
+
+  var data = new Date()
+  var hora = String(data.getHours()).padStart(2,'0')
+  var min = String(data.getMinutes()).padStart(2,'0')
+  var seg = data.getSeconds()//da uma diferenca na hr de validar
+  var mseg = data.getMilliseconds()//fica inviavel tmb de validar
+  var horaAtual = hora+':'+min
+
+  return horaAtual
+};
