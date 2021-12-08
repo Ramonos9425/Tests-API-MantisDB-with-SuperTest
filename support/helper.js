@@ -45,7 +45,7 @@ exports.GerarDataAtual= async () => {
 exports.GerarHoraAtual= async () => {
 
   var data = new Date()
-  var hora = String(data.getHours()).padStart(2,'0')
+  var hora = String(data.getHours()-3).padStart(2,'0')
   var min = String(data.getMinutes()).padStart(2,'0')
   var seg = data.getSeconds()//da uma diferenca na hr de validar
   var mseg = data.getMilliseconds()//fica inviavel tmb de validar
