@@ -3,9 +3,9 @@ const addContext = require('mochawesome/addContext');
 
 exports.GerarToken = async () => {
 
-  const response = await request('https://engine.fretebras.dev.br').post("/auth/shipper/id")
+  const response = await request('https://...').post("/...")
   .set('Content-Type', 'application/json')
-  .send('{"user_id": 24}')
+  .send('')
   .expect(200)
   console.log('Token gerado')    
   console.log(response.body.access_token)                     
@@ -45,7 +45,7 @@ exports.GerarDataAtual= async () => {
 exports.GerarHoraAtual= async () => {
 
   var data = new Date()
-  var hora = String(data.getHours()-3).padStart(2,'0')
+  var hora = String(data.getHours()).padStart(2,'0')
   var min = String(data.getMinutes()).padStart(2,'0')
   var seg = data.getSeconds()//da uma diferenca na hr de validar
   var mseg = data.getMilliseconds()//fica inviavel tmb de validar
